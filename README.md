@@ -17,9 +17,10 @@ pip3 install torchstuff
 
 ```python
 import torch
+from torchstuff.polygon import Polygon
 
 # Example vertices
-vertices = torch.tensor([[0.0, 0.0], [1.0, 0.0], [1.0, 1.0], [0.0, 1.0]])
+vertices = torch.tensor([[0., 0.], [0., 1.], [1., 1.], [1., 0.], [0., 0.]])
 
 # Create Polygon object
 polygon = Polygon(vertices)
